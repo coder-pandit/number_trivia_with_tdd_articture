@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:number_trivia/core/error/failures.dart';
+
+import '../error/failures.dart';
 
 abstract class UseCase<Type, Params> {
   // call method meke a class callable directly
