@@ -10,18 +10,6 @@ class NumberTrivia extends Equatable {
     @required this.number,
   });
 
-  factory NumberTrivia.fromJson(Map<String, dynamic> json) => NumberTrivia(
-        text: json['text'],
-        number: json['number'],
-      );
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['text'] = this.text;
-    data['number'] = this.number;
-    return data;
-  }
-
   @override
   List<Object> get props => [
         text,
